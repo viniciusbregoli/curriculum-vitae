@@ -1,0 +1,101 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Colors
+\definecolor{linkcolor}{RGB}{0,70,130}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Custom commands
+\newcommand{\entry}[4]{
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{#4}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\bfseries Vinícius Bregoli} \\[4pt]
+    Software Developer \\[6pt]
+    \href{https://www.viniciusbregoli.dev}{viniciusbregoli.dev} \enspace$\cdot$\enspace
+    \href{mailto:me@viniciusbregoli.dev}{me@viniciusbregoli.dev} \enspace$\cdot$\enspace
+    Curitiba, Paraná \\[2pt]
+    \href{https://linkedin.com/in/viniciusbregoli/}{linkedin.com/in/viniciusbregoli} \enspace$\cdot$\enspace
+    \href{https://github.com/viniciusbregoli}{github.com/viniciusbregoli}
+\end{center}
+
+\section{Technical Skills}
+\noindent\textbf{Languages:} Python, Rust, JavaScript, C/C++, SQL, HTML, CSS \\
+\textbf{Frameworks \& Libraries:} Node.js, Pytorch, OpenCV \\
+\textbf{Tools \& Platforms:} Git, Linux, Virtualization \\
+\textbf{Areas:} Full-Stack Development, Machine Learning, Deployment, IT Infrastructure
+
+\section{Work Experience}
+
+\entry{ML/AI Developer}{Kinebot}{Curitiba, Brazil}{Sept 2025 -- Present}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Developing computer vision solutions for human pose estimation
+    \item Implementing and fine-tuning LLM-based applications
+    \item Building ML pipelines primarily in Python using PyTorch and OpenCV
+\end{itemize}
+
+\vspace{8pt}
+
+\entry{Intern -- Software Development}{Exati Tecnologias}{Curitiba, Brazil}{2022 -- 2023}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Developed and maintained web applications using Vue.js
+    \item Integrated frontend applications with backend services using Java and Node.js
+    \item Designed and managed PostgreSQL databases
+    \item Collaborated using Git/GitLab for version control and YouTrack for task management
+\end{itemize}
+
+\vspace{8pt}
+
+\entry{Intern -- IT Infrastructure}{Siemens Energy Brasil}{Curitiba, Brazil}{2021 -- 2022}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Managed IT infrastructure and virtualization environments
+    \item Provided remote technical support in a high-demand corporate environment
+    \item Handled call and ticket management systems
+\end{itemize}
+
+\section{Education}
+
+\entry{Computer Science and AI (Exchange Program)}{Technische Hochschule Ingolstadt}{Ingolstadt, Germany}{Oct 2024 -- Aug 2025}
+
+\vspace{8pt}
+
+\entry{B.Eng. Computer Engineering}{Pontifical Catholic University of Paraná (PUCPR)}{Curitiba, Brazil}{2020 -- 2025}
+
+\section{Projects \& Research}
+
+\textbf{Digital Twins Research -- Airbus Partnership} \hfill 2021 \\
+Scholarship Program for Initiation in Technological Development and Innovation, focusing on digital twins and their applications in aerospace projects.
+
+\vspace{8pt}
+
+\textbf{PUCPR Mobile Robotics Team} \hfill 2020 -- 2023 \\
+Contributed to development of follow-line, sumo, trekking, and combat robots. Competed in RoboCore Experience (RCX) and IRONCup competitions.
+
+\section{Languages}
+
+\noindent English (Fluent) \enspace$\cdot$\enspace Portuguese (Native) \enspace$\cdot$\enspace Spanish (Intermediate) \enspace$\cdot$\enspace German (Beginner)
+
+\end{document}

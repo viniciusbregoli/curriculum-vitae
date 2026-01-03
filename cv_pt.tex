@@ -1,0 +1,101 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Colors
+\definecolor{linkcolor}{RGB}{0,70,130}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Custom commands
+\newcommand{\entry}[4]{
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{#4}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\bfseries Vinícius Bregoli} \\[4pt]
+    Desenvolvedor de Software \\[6pt]
+    \href{https://www.viniciusbregoli.dev}{viniciusbregoli.dev} \enspace$\cdot$\enspace
+    \href{mailto:me@viniciusbregoli.dev}{me@viniciusbregoli.dev} \enspace$\cdot$\enspace
+    Curitiba, Paraná \\[2pt]
+    \href{https://linkedin.com/in/viniciusbregoli/}{linkedin.com/in/viniciusbregoli} \enspace$\cdot$\enspace
+    \href{https://github.com/viniciusbregoli}{github.com/viniciusbregoli}
+\end{center}
+
+\section{Habilidades Técnicas}
+\noindent\textbf{Linguagens:} Python, Rust, JavaScript, C/C++, SQL, HTML, CSS \\
+\textbf{Frameworks e Bibliotecas:} Node.js, Pytorch, OpenCV \\
+\textbf{Ferramentas e Plataformas:} Git, Linux, Virtualização \\
+\textbf{Áreas:} Desenvolvimento Full-Stack, Machine Learning, Deploy, Infraestrutura de TI
+
+\section{Experiência Profissional}
+
+\entry{Desenvolvedor ML/IA}{Kinebot}{Curitiba, Brasil}{Set 2025 -- Presente}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Desenvolvimento de soluções de visão computacional para estimativa de pose humana
+    \item Implementação e ajuste fino de aplicações baseadas em LLMs
+    \item Construção de pipelines de ML principalmente em Python usando PyTorch e OpenCV
+\end{itemize}
+
+\vspace{8pt}
+
+\entry{Estagiário -- Desenvolvimento de Software}{Exati Tecnologias}{Curitiba, Brasil}{2022 -- 2023}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Desenvolvimento e manutenção de aplicações web utilizando Vue.js
+    \item Integração de aplicações frontend com serviços backend usando Java e Node.js
+    \item Criação e gerenciamento de bancos de dados PostgreSQL
+    \item Colaboração utilizando Git/GitLab para controle de versão e YouTrack para gestão de tarefas
+\end{itemize}
+
+\vspace{8pt}
+
+\entry{Estagiário -- Infraestrutura de TI}{Siemens Energy Brasil}{Curitiba, Brasil}{2021 -- 2022}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Gerenciamento de infraestrutura de TI e ambientes de virtualização
+    \item Suporte técnico remoto em ambiente corporativo de alta demanda
+    \item Gestão de chamados e tickets
+\end{itemize}
+
+\section{Formação Acadêmica}
+
+\entry{Ciência da Computação e IA (Intercâmbio)}{Technische Hochschule Ingolstadt}{Ingolstadt, Alemanha}{Out 2024 -- Ago 2025}
+
+\vspace{8pt}
+
+\entry{Bacharelado em Engenharia de Computação}{Pontifícia Universidade Católica do Paraná (PUCPR)}{Curitiba, Brasil}{2020 -- 2025}
+
+\section{Projetos e Pesquisa}
+
+\textbf{Pesquisa em Digital Twins -- Parceria Airbus} \hfill 2021 \\
+Programa de Bolsas de Iniciação em Desenvolvimento Tecnológico e Inovação, com foco em digital twins e suas aplicações em projetos aeroespaciais.
+
+\vspace{8pt}
+
+\textbf{Equipe de Robótica Móvel PUCPR} \hfill 2020 -- 2023 \\
+Contribuição no desenvolvimento de robôs seguidores de linha, sumô, trekking e combate. Participação em competições como RoboCore Experience (RCX) e IRONCup.
+
+\section{Idiomas}
+
+\noindent Inglês (Fluente) \enspace$\cdot$\enspace Português (Nativo) \enspace$\cdot$\enspace Espanhol (Intermediário) \enspace$\cdot$\enspace Alemão (Básico)
+
+\end{document}

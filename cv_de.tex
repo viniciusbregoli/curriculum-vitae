@@ -1,0 +1,101 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Colors
+\definecolor{linkcolor}{RGB}{0,70,130}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Custom commands
+\newcommand{\entry}[4]{
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{#4}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\bfseries Vinícius Bregoli} \\[4pt]
+    Softwareentwickler \\[6pt]
+    \href{https://www.viniciusbregoli.dev}{viniciusbregoli.dev} \enspace$\cdot$\enspace
+    \href{mailto:me@viniciusbregoli.dev}{me@viniciusbregoli.dev} \enspace$\cdot$\enspace
+    Curitiba, Paraná \\[2pt]
+    \href{https://linkedin.com/in/viniciusbregoli/}{linkedin.com/in/viniciusbregoli} \enspace$\cdot$\enspace
+    \href{https://github.com/viniciusbregoli}{github.com/viniciusbregoli}
+\end{center}
+
+\section{Technische Kenntnisse}
+\noindent\textbf{Programmiersprachen:} Python, Rust, JavaScript, C/C++, SQL, HTML, CSS \\
+\textbf{Frameworks und Bibliotheken:} Node.js, Pytorch, OpenCV \\
+\textbf{Tools und Plattformen:} Git, Linux, Virtualisierung \\
+\textbf{Bereiche:} Full-Stack-Entwicklung, Machine Learning, Deployment, IT-Infrastruktur
+
+\section{Berufserfahrung}
+
+\entry{ML/KI-Entwickler}{Kinebot}{Curitiba, Brasilien}{Sept 2025 -- Heute}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Entwicklung von Computer-Vision-Lösungen zur menschlichen Posenschätzung
+    \item Implementierung und Feinabstimmung von LLM-basierten Anwendungen
+    \item Aufbau von ML-Pipelines hauptsächlich in Python mit PyTorch und OpenCV
+\end{itemize}
+
+\vspace{8pt}
+
+\entry{Praktikant -- Softwareentwicklung}{Exati Tecnologias}{Curitiba, Brasilien}{2022 -- 2023}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Entwicklung und Wartung von Webanwendungen mit Vue.js
+    \item Integration von Frontend-Anwendungen mit Backend-Diensten mittels Java und Node.js
+    \item Entwurf und Verwaltung von PostgreSQL-Datenbanken
+    \item Zusammenarbeit mit Git/GitLab zur Versionskontrolle und YouTrack zur Aufgabenverwaltung
+\end{itemize}
+
+\vspace{8pt}
+
+\entry{Praktikant -- IT-Infrastruktur}{Siemens Energy Brasil}{Curitiba, Brasilien}{2021 -- 2022}
+\begin{itemize}[nosep, leftmargin=*]
+    \item Verwaltung von IT-Infrastruktur und Virtualisierungsumgebungen
+    \item Remote-Support in einem anspruchsvollen Unternehmensumfeld
+    \item Bearbeitung von Anfragen und Ticket-Management
+\end{itemize}
+
+\section{Ausbildung}
+
+\entry{Informatik und KI (Austauschprogramm)}{Technische Hochschule Ingolstadt}{Ingolstadt, Deutschland}{Okt 2024 -- Aug 2025}
+
+\vspace{8pt}
+
+\entry{B.Eng. Technische Informatik}{Pontifícia Universidade Católica do Paraná (PUCPR)}{Curitiba, Brasilien}{2020 -- 2025}
+
+\section{Projekte und Forschung}
+
+\textbf{Digital-Twins-Forschung -- Airbus-Partnerschaft} \hfill 2021 \\
+Stipendienprogramm für technologische Entwicklung und Innovation mit Schwerpunkt auf Digital Twins und deren Anwendungen in der Luft- und Raumfahrt.
+
+\vspace{8pt}
+
+\textbf{PUCPR Mobile Robotics Team} \hfill 2020 -- 2023 \\
+Mitwirkung bei der Entwicklung von Linienfolger-, Sumo-, Trekking- und Kampfrobotern. Teilnahme an Wettbewerben wie RoboCore Experience (RCX) und IRONCup.
+
+\section{Sprachen}
+
+\noindent Englisch (Fließend) \enspace$\cdot$\enspace Portugiesisch (Muttersprache) \enspace$\cdot$\enspace Spanisch (Mittelstufe) \enspace$\cdot$\enspace Deutsch (Grundkenntnisse)
+
+\end{document}
