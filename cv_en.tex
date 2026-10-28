@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage[margin=2cm]{geometry}
+\usepackage[margin=1.65cm]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{hyperref}
@@ -18,10 +18,13 @@
 
 % Section formatting
 \titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{12pt}{6pt}
+\titlespacing{\section}{0pt}{6pt}{2pt}
 
 % Remove page numbers
 \pagenumbering{gobble}
+
+% Slightly tighter leading so the longer experience section stays on one page
+\linespread{0.95}
 
 % Custom commands
 \newcommand{\entry}[4]{
@@ -34,7 +37,8 @@
 % Header
 \begin{center}
     {\LARGE\bfseries Vinícius Bregoli} \\[4pt]
-    Software Developer \\[6pt]
+    AI/ML Engineer \\[1pt]
+    Computer Vision \enspace$\cdot$\enspace LLM Infrastructure \enspace$\cdot$\enspace AI Agents \\[6pt]
     \href{https://www.viniciusbregoli.dev}{viniciusbregoli.dev} \enspace$\cdot$\enspace
     \href{mailto:me@viniciusbregoli.dev}{me@viniciusbregoli.dev} \enspace$\cdot$\enspace
     Curitiba, Paraná \\[2pt]
@@ -44,20 +48,24 @@
 
 \section{Technical Skills}
 \noindent\textbf{Languages:} Python, Rust, JavaScript, C/C++, SQL, HTML, CSS \\
-\textbf{Frameworks \& Libraries:} Node.js, Pytorch, OpenCV \\
-\textbf{Tools \& Platforms:} Git, Linux, Virtualization \\
-\textbf{Areas:} Full-Stack Development, Machine Learning, Deployment, IT Infrastructure
+\textbf{Frameworks \& Libraries:} FastAPI, Node.js, PyTorch, OpenCV, YOLO \\
+\textbf{Tools \& Platforms:} Git, Linux, PostgreSQL, Redis, Virtualization \\
+\textbf{Areas:} Computer Vision, 3D Inference, Machine Learning, LLM Infrastructure, AI Agents (MCP), Full-Stack Development, Deployment, IT Infrastructure
 
 \section{Work Experience}
 
-\entry{ML/AI Developer}{Kinebot}{Curitiba, Brazil}{Sept 2025 -- Present}
+\entry{ML/AI Developer}{Kinebot}{Curitiba, Brazil}{Oct 2025 -- Present}
 \begin{itemize}[nosep, leftmargin=*]
-    \item Developing computer vision solutions for human pose estimation
-    \item Implementing and fine-tuning LLM-based applications
-    \item Building ML pipelines primarily in Python using PyTorch and OpenCV
+    \item Built computer vision models (YOLO) and 3D inference to support ergonomic analysis from video.
+    \item Built an agent orchestrator for ergonomic video analysis: specialized agents (vision, and the REBA, KIM-PP and NIOSH assessments) run in parallel over a shared context managed by the orchestrator.
+    \item Built custom MCP servers for the company's internal tools.
+    \item Integrated generative AI models into the platform's ergonomic analyses.
+    \item Time analysis of videos: identifying activities and organizing their start and end intervals into a timeline.
+    \item GPU infrastructure for serving LLMs.
+    \item Python backend services (FastAPI, Redis, PostgreSQL) connecting AI processing to the platform's workflows.
 \end{itemize}
 
-\vspace{8pt}
+\vspace{3pt}
 
 \entry{Intern -- Software Development}{Exati Tecnologias}{Curitiba, Brazil}{2022 -- 2023}
 \begin{itemize}[nosep, leftmargin=*]
@@ -67,7 +75,7 @@
     \item Collaborated using Git/GitLab for version control and YouTrack for task management
 \end{itemize}
 
-\vspace{8pt}
+\vspace{3pt}
 
 \entry{Intern -- IT Infrastructure}{Siemens Energy Brasil}{Curitiba, Brazil}{2021 -- 2022}
 \begin{itemize}[nosep, leftmargin=*]
@@ -80,7 +88,7 @@
 
 \entry{Computer Science and AI (Exchange Program)}{Technische Hochschule Ingolstadt}{Ingolstadt, Germany}{Oct 2024 -- Aug 2025}
 
-\vspace{8pt}
+\vspace{3pt}
 
 \entry{B.Eng. Computer Engineering}{Pontifical Catholic University of Paraná (PUCPR)}{Curitiba, Brazil}{2020 -- 2025}
 
@@ -89,7 +97,7 @@
 \textbf{Digital Twins Research -- Airbus Partnership} \hfill 2021 \\
 Scholarship Program for Initiation in Technological Development and Innovation, focusing on digital twins and their applications in aerospace projects.
 
-\vspace{8pt}
+\vspace{3pt}
 
 \textbf{PUCPR Mobile Robotics Team} \hfill 2020 -- 2023 \\
 Contributed to development of follow-line, sumo, trekking, and combat robots. Competed in RoboCore Experience (RCX) and IRONCup competitions.

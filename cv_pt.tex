@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage[margin=2cm]{geometry}
+\usepackage[margin=1.65cm]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{hyperref}
@@ -18,10 +18,13 @@
 
 % Section formatting
 \titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{12pt}{6pt}
+\titlespacing{\section}{0pt}{6pt}{2pt}
 
 % Remove page numbers
 \pagenumbering{gobble}
+
+% Slightly tighter leading so the longer experience section stays on one page
+\linespread{0.95}
 
 % Custom commands
 \newcommand{\entry}[4]{
@@ -34,7 +37,8 @@
 % Header
 \begin{center}
     {\LARGE\bfseries Vinícius Bregoli} \\[4pt]
-    Desenvolvedor de Software \\[6pt]
+    Engenheiro de IA/ML \\[1pt]
+    Visão Computacional \enspace$\cdot$\enspace Infraestrutura de LLMs \enspace$\cdot$\enspace Agentes de IA \\[6pt]
     \href{https://www.viniciusbregoli.dev}{viniciusbregoli.dev} \enspace$\cdot$\enspace
     \href{mailto:me@viniciusbregoli.dev}{me@viniciusbregoli.dev} \enspace$\cdot$\enspace
     Curitiba, Paraná \\[2pt]
@@ -44,20 +48,24 @@
 
 \section{Habilidades Técnicas}
 \noindent\textbf{Linguagens:} Python, Rust, JavaScript, C/C++, SQL, HTML, CSS \\
-\textbf{Frameworks e Bibliotecas:} Node.js, Pytorch, OpenCV \\
-\textbf{Ferramentas e Plataformas:} Git, Linux, Virtualização \\
-\textbf{Áreas:} Desenvolvimento Full-Stack, Machine Learning, Deploy, Infraestrutura de TI
+\textbf{Frameworks e Bibliotecas:} FastAPI, Node.js, PyTorch, OpenCV, YOLO \\
+\textbf{Ferramentas e Plataformas:} Git, Linux, PostgreSQL, Redis, Virtualização \\
+\textbf{Áreas:} Visão Computacional, Inferência 3D, Machine Learning, Infraestrutura de LLMs, Agentes de IA (MCP), Desenvolvimento Full-Stack, Deploy, Infraestrutura de TI
 
 \section{Experiência Profissional}
 
-\entry{Desenvolvedor ML/IA}{Kinebot}{Curitiba, Brasil}{Set 2025 -- Presente}
+\entry{Desenvolvedor ML/IA}{Kinebot}{Curitiba, Brasil}{Out 2025 -- Presente}
 \begin{itemize}[nosep, leftmargin=*]
-    \item Desenvolvimento de soluções de visão computacional para estimativa de pose humana
-    \item Implementação e ajuste fino de aplicações baseadas em LLMs
-    \item Construção de pipelines de ML principalmente em Python usando PyTorch e OpenCV
+    \item Desenvolvimento de modelos de visão computacional (YOLO) e de inferência 3D para apoiar a análise ergonômica a partir de vídeo.
+    \item Desenvolvimento de um orquestrador de agentes para análise ergonômica de vídeo: agentes especializados (visão e as avaliações REBA, KIM-PP e NIOSH) executados em paralelo sobre um contexto compartilhado gerenciado pelo orquestrador.
+    \item Desenvolvimento de servidores MCP personalizados para as ferramentas internas da empresa.
+    \item Integração de modelos de IA generativa às análises ergonômicas da plataforma.
+    \item Análise temporal de vídeos: identificação de atividades e organização dos intervalos de início e fim em uma linha do tempo.
+    \item Infraestrutura de GPU para serving de LLMs.
+    \item Serviços de backend em Python (FastAPI, Redis, PostgreSQL) conectando o processamento de IA aos fluxos de trabalho da plataforma.
 \end{itemize}
 
-\vspace{8pt}
+\vspace{3pt}
 
 \entry{Estagiário -- Desenvolvimento de Software}{Exati Tecnologias}{Curitiba, Brasil}{2022 -- 2023}
 \begin{itemize}[nosep, leftmargin=*]
@@ -67,7 +75,7 @@
     \item Colaboração utilizando Git/GitLab para controle de versão e YouTrack para gestão de tarefas
 \end{itemize}
 
-\vspace{8pt}
+\vspace{3pt}
 
 \entry{Estagiário -- Infraestrutura de TI}{Siemens Energy Brasil}{Curitiba, Brasil}{2021 -- 2022}
 \begin{itemize}[nosep, leftmargin=*]
@@ -80,7 +88,7 @@
 
 \entry{Ciência da Computação e IA (Intercâmbio)}{Technische Hochschule Ingolstadt}{Ingolstadt, Alemanha}{Out 2024 -- Ago 2025}
 
-\vspace{8pt}
+\vspace{3pt}
 
 \entry{Bacharelado em Engenharia de Computação}{Pontifícia Universidade Católica do Paraná (PUCPR)}{Curitiba, Brasil}{2020 -- 2025}
 
@@ -89,7 +97,7 @@
 \textbf{Pesquisa em Digital Twins -- Parceria Airbus} \hfill 2021 \\
 Programa de Bolsas de Iniciação em Desenvolvimento Tecnológico e Inovação, com foco em digital twins e suas aplicações em projetos aeroespaciais.
 
-\vspace{8pt}
+\vspace{3pt}
 
 \textbf{Equipe de Robótica Móvel PUCPR} \hfill 2020 -- 2023 \\
 Contribuição no desenvolvimento de robôs seguidores de linha, sumô, trekking e combate. Participação em competições como RoboCore Experience (RCX) e IRONCup.
